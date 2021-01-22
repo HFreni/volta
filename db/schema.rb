@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_22_215902) do
+ActiveRecord::Schema.define(version: 2021_01_22_221647) do
+
+  create_table "power_rack_types", force: :cascade do |t|
+    t.integer "type_id"
+    t.string "name"
+    t.boolean "dimmed"
+    t.integer "rack_size"
+    t.boolean "mixed_voltage"
+    t.integer "ckt_per_mult"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "power_racks", force: :cascade do |t|
     t.integer "rack_id"

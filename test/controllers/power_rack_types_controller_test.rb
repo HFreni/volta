@@ -17,7 +17,7 @@ class PowerRackTypesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create power_rack_type" do
     assert_difference('PowerRackType.count') do
-      post power_rack_types_url, params: { power_rack_type: { ckt_per_mult: @power_rack_type.ckt_per_mult, dimmed: @power_rack_type.dimmed, mixed_voltage: @power_rack_type.mixed_voltage, rack_size: @power_rack_type.rack_size, type_id: @power_rack_type.type_id } }
+      post power_rack_types_url, params: { power_rack_type: { ckt_per_mult: @power_rack_type.ckt_per_mult, dimmed: @power_rack_type.dimmed, mixed_voltage: @power_rack_type.mixed_voltage, name: @power_rack_type.name, rack_size: @power_rack_type.rack_size, type_id: @power_rack_type.type_id } }
     end
 
     assert_redirected_to power_rack_type_url(PowerRackType.last)
@@ -34,7 +34,7 @@ class PowerRackTypesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update power_rack_type" do
-    patch power_rack_type_url(@power_rack_type), params: { power_rack_type: { ckt_per_mult: @power_rack_type.ckt_per_mult, dimmed: @power_rack_type.dimmed, mixed_voltage: @power_rack_type.mixed_voltage, rack_size: @power_rack_type.rack_size, type_id: @power_rack_type.type_id } }
+    patch power_rack_type_url(@power_rack_type), params: { power_rack_type: { ckt_per_mult: @power_rack_type.ckt_per_mult, dimmed: @power_rack_type.dimmed, mixed_voltage: @power_rack_type.mixed_voltage, name: @power_rack_type.name, rack_size: @power_rack_type.rack_size, type_id: @power_rack_type.type_id } }
     assert_redirected_to power_rack_type_url(@power_rack_type)
   end
 

@@ -2,6 +2,7 @@
 
 one:
   type_id: 1
+  name: MyString
   dimmed: false
   rack_size: 1
   mixed_voltage: false
@@ -9,6 +10,7 @@ one:
 
 two:
   type_id: 1
+  name: MyString
   dimmed: false
   rack_size: 1
   mixed_voltage: false

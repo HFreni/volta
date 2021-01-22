@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Type</th>
+      <th>Name</th>
       <th>Dimmed</th>
       <th>Rack size</th>
       <th>Mixed voltage</th>
@@ -18,6 +19,7 @@
     <% @power_rack_types.each do |power_rack_type| %>
       <tr>
         <td><%= power_rack_type.type_id %></td>
+        <td><%= power_rack_type.name %></td>
         <td><%= power_rack_type.dimmed %></td>
         <td><%= power_rack_type.rack_size %></td>
         <td><%= power_rack_type.mixed_voltage %></td>

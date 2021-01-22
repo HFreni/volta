@@ -17,6 +17,7 @@ class PowerRackTypesTest < ApplicationSystemTestCase
     fill_in "Ckt per mult", with: @power_rack_type.ckt_per_mult
     check "Dimmed" if @power_rack_type.dimmed
     check "Mixed voltage" if @power_rack_type.mixed_voltage
+    fill_in "Name", with: @power_rack_type.name
     fill_in "Rack size", with: @power_rack_type.rack_size
     fill_in "Type", with: @power_rack_type.type_id
     click_on "Create Power rack type"
@@ -32,6 +33,7 @@ class PowerRackTypesTest < ApplicationSystemTestCase
     fill_in "Ckt per mult", with: @power_rack_type.ckt_per_mult
     check "Dimmed" if @power_rack_type.dimmed
     check "Mixed voltage" if @power_rack_type.mixed_voltage
+    fill_in "Name", with: @power_rack_type.name
     fill_in "Rack size", with: @power_rack_type.rack_size
     fill_in "Type", with: @power_rack_type.type_id
     click_on "Update Power rack type"

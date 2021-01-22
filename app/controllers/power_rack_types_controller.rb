@@ -69,6 +69,6 @@ class PowerRackTypesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def power_rack_type_params
-      params.require(:power_rack_type).permit(:type_id, :dimmed, :rack_size, :mixed_voltage, :ckt_per_mult)
+      params.require(:power_rack_type).permit(:type_id, :name, :dimmed, :rack_size, :mixed_voltage, :ckt_per_mult)
     end
 end
