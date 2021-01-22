@@ -1,7 +1,7 @@
 class CreatePowerRacks < ActiveRecord::Migration[6.1]
   def change
     create_table :power_racks do |t|
-      t.primary_key :rack_id
+      t.integer :rack_id
       t.string :rack_call
       t.string :rack_name
       t.string :rack_location

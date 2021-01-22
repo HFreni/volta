@@ -1,7 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  rack_id: 
+  rack_id: 1
   rack_call: MyString
   rack_name: MyString
   rack_location: MyString
@@ -12,7 +12,7 @@ one:
   phase_rotation: 1
 
 two:
-  rack_id: 
+  rack_id: 1
   rack_call: MyString
   rack_name: MyString
   rack_location: MyString
