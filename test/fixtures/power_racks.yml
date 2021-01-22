@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rack_id: 
+  rack_call: MyString
+  rack_name: MyString
+  rack_location: MyString
+  service_id: 
+  rack_type_id: 
+  rack_addr_start: 1
+  rack_univ: 1
+  phase_rotation: 1
+
+two:
+  rack_id: 
+  rack_call: MyString
+  rack_name: MyString
+  rack_location: MyString
+  service_id: 
+  rack_type_id: 
+  rack_addr_start: 1
+  rack_univ: 1
+  phase_rotation: 1

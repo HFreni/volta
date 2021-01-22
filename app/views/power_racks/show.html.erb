@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rack:</strong>
+  <%= @power_rack.rack_id %>
+</p>
+
+<p>
+  <strong>Rack call:</strong>
+  <%= @power_rack.rack_call %>
+</p>
+
+<p>
+  <strong>Rack name:</strong>
+  <%= @power_rack.rack_name %>
+</p>
+
+<p>
+  <strong>Rack location:</strong>
+  <%= @power_rack.rack_location %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @power_rack.service_id %>
+</p>
+
+<p>
+  <strong>Rack type:</strong>
+  <%= @power_rack.rack_type_id %>
+</p>
+
+<p>
+  <strong>Rack addr start:</strong>
+  <%= @power_rack.rack_addr_start %>
+</p>
+
+<p>
+  <strong>Rack univ:</strong>
+  <%= @power_rack.rack_univ %>
+</p>
+
+<p>
+  <strong>Phase rotation:</strong>
+  <%= @power_rack.phase_rotation %>
+</p>
+
+<%= link_to 'Edit', edit_power_rack_path(@power_rack) %> |
+<%= link_to 'Back', power_racks_path %>

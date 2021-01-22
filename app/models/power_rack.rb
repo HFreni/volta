@@ -1,0 +1,2 @@
+class PowerRack < ApplicationRecord
+end

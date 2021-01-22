@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Power Racks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rack</th>
+      <th>Rack call</th>
+      <th>Rack name</th>
+      <th>Rack location</th>
+      <th>Service</th>
+      <th>Rack type</th>
+      <th>Rack addr start</th>
+      <th>Rack univ</th>
+      <th>Phase rotation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @power_racks.each do |power_rack| %>
+      <tr>
+        <td><%= power_rack.rack_id %></td>
+        <td><%= power_rack.rack_call %></td>
+        <td><%= power_rack.rack_name %></td>
+        <td><%= power_rack.rack_location %></td>
+        <td><%= power_rack.service_id %></td>
+        <td><%= power_rack.rack_type_id %></td>
+        <td><%= power_rack.rack_addr_start %></td>
+        <td><%= power_rack.rack_univ %></td>
+        <td><%= power_rack.phase_rotation %></td>
+        <td><%= link_to 'Show', power_rack %></td>
+        <td><%= link_to 'Edit', edit_power_rack_path(power_rack) %></td>
+        <td><%= link_to 'Destroy', power_rack, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Power Rack', new_power_rack_path %>
