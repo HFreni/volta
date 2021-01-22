@@ -1,0 +1,42 @@
+<%= form_with(model: power_rack_type) do |form| %>
+  <% if power_rack_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(power_rack_type.errors.count, "error") %> prohibited this power_rack_type from being saved:</h2>
+
+      <ul>
+        <% power_rack_type.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :type_id %>
+    <%= form.number_field :type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dimmed %>
+    <%= form.check_box :dimmed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rack_size %>
+    <%= form.number_field :rack_size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mixed_voltage %>
+    <%= form.check_box :mixed_voltage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ckt_per_mult %>
+    <%= form.number_field :ckt_per_mult %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

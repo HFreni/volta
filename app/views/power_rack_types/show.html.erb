@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @power_rack_type.type_id %>
+</p>
+
+<p>
+  <strong>Dimmed:</strong>
+  <%= @power_rack_type.dimmed %>
+</p>
+
+<p>
+  <strong>Rack size:</strong>
+  <%= @power_rack_type.rack_size %>
+</p>
+
+<p>
+  <strong>Mixed voltage:</strong>
+  <%= @power_rack_type.mixed_voltage %>
+</p>
+
+<p>
+  <strong>Ckt per mult:</strong>
+  <%= @power_rack_type.ckt_per_mult %>
+</p>
+
+<%= link_to 'Edit', edit_power_rack_type_path(@power_rack_type) %> |
+<%= link_to 'Back', power_rack_types_path %>

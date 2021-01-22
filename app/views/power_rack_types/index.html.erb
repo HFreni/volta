@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Power Rack Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Dimmed</th>
+      <th>Rack size</th>
+      <th>Mixed voltage</th>
+      <th>Ckt per mult</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @power_rack_types.each do |power_rack_type| %>
+      <tr>
+        <td><%= power_rack_type.type_id %></td>
+        <td><%= power_rack_type.dimmed %></td>
+        <td><%= power_rack_type.rack_size %></td>
+        <td><%= power_rack_type.mixed_voltage %></td>
+        <td><%= power_rack_type.ckt_per_mult %></td>
+        <td><%= link_to 'Show', power_rack_type %></td>
+        <td><%= link_to 'Edit', edit_power_rack_type_path(power_rack_type) %></td>
+        <td><%= link_to 'Destroy', power_rack_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Power Rack Type', new_power_rack_type_path %>
